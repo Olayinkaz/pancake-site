@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+.title {
+    text-align: center;
+    font-family: "Roboto", sans-serif; 
+    font-size: larger;
+    margin-top: 40px;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: #FFC23C;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px auto;
+}
+.filter-btn {
+   text-transform: capitalize;
+   border-color: gold;
+   color: gold;
+   border-radius: 7px;
+} 
+
+
+.section-center {
+    margin: 0 auto;
+    display: grid;
+    gap: 3rem 1rem;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+image {
+    display: block;;
+}
+.menu-item {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+    height: 120px;
+    max-width: 25rem; 
+}
+.photo {
+    object-fit: cover;
+    height: 120px;
+    border: 0.15rem solid gold;
+    border-radius: 0.5rem;
+  }
+  .item-info {
+      line-height: 100%;
+  }
+  .item-info header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between; 
+    border-bottom: 0.5px dotted grey;
+  }
+.price {
+    font-weight: 200;
+    color: gold; 
+} 
+@media screen and (min-width: 768px) {
+    .menu-item {
+      grid-template-rows: 225px 1fr;
+      gap: 0 1.25rem;
+      max-width: 40rem;
+    }
+    .photo {
+      height: 175px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
+
+
+  @media screen and (max-width: 720px) {
+
+    .section-center {
+      margin: 0 auto;
+      display: grid;
+      gap: 30px 10px;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+    }
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 50px;
+    }
+    /*.item-info header {
+      margin-bottom: 5px;
+    } */
+    .photo {
+      height: 60px;
+      margin-top: 50px;
+    } 
+  }
